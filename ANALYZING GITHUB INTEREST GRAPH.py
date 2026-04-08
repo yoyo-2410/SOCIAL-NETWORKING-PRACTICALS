@@ -22,9 +22,8 @@ for u1, u2 in combinations(data, 2):
         G.add_edge(u1, u2)
         labels[(u1, u2)] = "\n".join(list(common)[:2])
 
-# 🔥 FIXED VISUAL SECTION (this is what you were missing)
-plt.figure(figsize=(10, 7))  # restore canvas size
-pos = nx.spring_layout(G, k=1)  # same spacing as old code
+plt.figure(figsize=(10, 7))
+pos = nx.spring_layout(G, k=1)
 
 nx.draw(G, pos,
         with_labels=True,
