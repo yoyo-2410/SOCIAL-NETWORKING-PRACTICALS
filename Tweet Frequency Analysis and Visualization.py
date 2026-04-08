@@ -8,7 +8,6 @@ from collections import Counter
 nltk.download("punkt")
 nltk.download("stopwords")
 
-# authentication
 api = tweepy.API(tweepy.OAuth1UserHandler(
     "consumer_key",
     "consumer_secret",
