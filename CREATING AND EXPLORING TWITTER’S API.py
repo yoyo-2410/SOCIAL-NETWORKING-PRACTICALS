@@ -15,7 +15,6 @@ def get_user(k, ks, t, ts):
     else:
         print("Error:", r.status_code, r.text)
 
-# ===== Replace with your actual credentials =====
 api_key = "YOUR_API_KEY"
 api_secret_key = "YOUR_API_SECRET_KEY"
 access_token = "YOUR_ACCESS_TOKEN"
